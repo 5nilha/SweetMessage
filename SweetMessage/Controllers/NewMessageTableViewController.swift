@@ -67,7 +67,7 @@ extension NewMessageTableViewController {
     // --------------------- Limiting the maximum characters on the textView ----------------
     public func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         
-        guard text.characters.count > 0 else {
+        guard text.count > 0 else {
             return true
         }
         
@@ -75,7 +75,7 @@ extension NewMessageTableViewController {
         
         let prospectiveText = (currentText as NSString).replacingCharacters(in: range, with: text)
         
-        return prospectiveText.characters.count <= maximumChar
+        return prospectiveText.count <= maximumChar
         
     }
     

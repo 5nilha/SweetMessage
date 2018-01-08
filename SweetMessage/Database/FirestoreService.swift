@@ -43,7 +43,7 @@ class FirestoreService {
     
     func loadData(from collectionReference: DataCollectionReference, completion: @escaping ([Message]) -> Void){
         
-        reference(to: collectionReference).order(by: "timeStamp", descending: true).addSnapshotListener { (snapshot, error) in
+        messageListener = reference(to: collectionReference).order(by: "timeStamp", descending: true).addSnapshotListener { (snapshot, error) in
             if let error = error {
                 print("Error Retriving data: \(error.localizedDescription)")
                 return

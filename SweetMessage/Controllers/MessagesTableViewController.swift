@@ -23,14 +23,22 @@ class MessagesTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.rowHeight = 120
         
-        
-        FirestoreService.shared.loadData(from: .messages) { (messages) in
-            self.messages = messages
-             self.tableView.reloadData()
-        }
- 
     }
 
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+       
+        FirestoreService.shared.loadData(from: .messages) { (messages) in
+            self.messages = messages
+            self.tableView.reloadData()
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        FirestoreService.shared.stopObserverQuery()
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
