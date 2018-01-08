@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3ED46A82200187320056CCE6 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED46A81200187320056CCE6 /* FirestoreService.swift */; };
+		3ED46A882001A6580056CCE6 /* DataCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED46A872001A6580056CCE6 /* DataCollectionReference.swift */; };
+		3ED46A8E20020A860056CCE6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED46A8D20020A860056CCE6 /* User.swift */; };
+		3ED46ABA2003389E0056CCE6 /* TextViewPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED46AB92003389E0056CCE6 /* TextViewPlaceholder.swift */; };
+		3EE14E112000342A008C279F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE14E102000342A008C279F /* AppDelegate.swift */; };
+		3EE14E162000342A008C279F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE14E142000342A008C279F /* Main.storyboard */; };
+		3EE14E182000342A008C279F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE14E172000342A008C279F /* Assets.xcassets */; };
+		3EE14E1B2000342A008C279F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE14E192000342A008C279F /* LaunchScreen.storyboard */; };
+		3EE14E2320003534008C279F /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE14E2220003534008C279F /* MessagesTableViewController.swift */; };
+		3EE14E2520003560008C279F /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE14E2420003560008C279F /* MessageCell.swift */; };
+		3EE14E2720003677008C279F /* NewMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE14E2620003677008C279F /* NewMessageTableViewController.swift */; };
+		3EE14E2920004566008C279F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3EE14E2820004566008C279F /* GoogleService-Info.plist */; };
+		3EE14E2B200054B3008C279F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE14E2A200054B3008C279F /* Message.swift */; };
+		AB14C57D5B522FA3D5114935 /* Pods_SweetMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F8647EA07E2E7076E8FE88 /* Pods_SweetMessage.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3ED46A81200187320056CCE6 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		3ED46A872001A6580056CCE6 /* DataCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionReference.swift; sourceTree = "<group>"; };
+		3ED46A8D20020A860056CCE6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3ED46AB92003389E0056CCE6 /* TextViewPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewPlaceholder.swift; sourceTree = "<group>"; };
+		3EE14E0D2000342A008C279F /* SweetMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE14E102000342A008C279F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3EE14E152000342A008C279F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3EE14E172000342A008C279F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EE14E1A2000342A008C279F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3EE14E1C2000342A008C279F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EE14E2220003534008C279F /* MessagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
+		3EE14E2420003560008C279F /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		3EE14E2620003677008C279F /* NewMessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageTableViewController.swift; sourceTree = "<group>"; };
+		3EE14E2820004566008C279F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3EE14E2A200054B3008C279F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		4D9960CE5301B3D85BDC2409 /* Pods-SweetMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetMessage.release.xcconfig"; path = "Pods/Target Support Files/Pods-SweetMessage/Pods-SweetMessage.release.xcconfig"; sourceTree = "<group>"; };
+		E76C781258D7F3691F68212C /* Pods-SweetMessage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetMessage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SweetMessage/Pods-SweetMessage.debug.xcconfig"; sourceTree = "<group>"; };
+		F9F8647EA07E2E7076E8FE88 /* Pods_SweetMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EE14E0A2000342A008C279F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB14C57D5B522FA3D5114935 /* Pods_SweetMessage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3ED46ABD20033D1E0056CCE6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3EE14E2420003560008C279F /* MessageCell.swift */,
+				3EE14E2620003677008C279F /* NewMessageTableViewController.swift */,
+				3EE14E2220003534008C279F /* MessagesTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3ED46ABE20033D340056CCE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3EE14E2A200054B3008C279F /* Message.swift */,
+				3ED46A8D20020A860056CCE6 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3ED46ABF20033D450056CCE6 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				3ED46A81200187320056CCE6 /* FirestoreService.swift */,
+				3ED46A872001A6580056CCE6 /* DataCollectionReference.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		3ED46AC120033D670056CCE6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3ED46AB92003389E0056CCE6 /* TextViewPlaceholder.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3EE14E042000342A008C279F = {
+			isa = PBXGroup;
+			children = (
+				3EE14E0F2000342A008C279F /* SweetMessage */,
+				3EE14E0E2000342A008C279F /* Products */,
+				C04B97786060393317CB11B4 /* Pods */,
+				462C49E432BBE3C0848DAFC0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3EE14E0E2000342A008C279F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EE14E0D2000342A008C279F /* SweetMessage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EE14E0F2000342A008C279F /* SweetMessage */ = {
+			isa = PBXGroup;
+			children = (
+				3ED46AC120033D670056CCE6 /* Extensions */,
+				3ED46ABF20033D450056CCE6 /* Database */,
+				3ED46ABE20033D340056CCE6 /* Model */,
+				3ED46ABD20033D1E0056CCE6 /* Controllers */,
+				3EE14E102000342A008C279F /* AppDelegate.swift */,
+				3EE14E142000342A008C279F /* Main.storyboard */,
+				3EE14E172000342A008C279F /* Assets.xcassets */,
+				3EE14E192000342A008C279F /* LaunchScreen.storyboard */,
+				3EE14E1C2000342A008C279F /* Info.plist */,
+				3EE14E2820004566008C279F /* GoogleService-Info.plist */,
+			);
+			path = SweetMessage;
+			sourceTree = "<group>";
+		};
+		462C49E432BBE3C0848DAFC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9F8647EA07E2E7076E8FE88 /* Pods_SweetMessage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C04B97786060393317CB11B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E76C781258D7F3691F68212C /* Pods-SweetMessage.debug.xcconfig */,
+				4D9960CE5301B3D85BDC2409 /* Pods-SweetMessage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EE14E0C2000342A008C279F /* SweetMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EE14E1F2000342A008C279F /* Build configuration list for PBXNativeTarget "SweetMessage" */;
+			buildPhases = (
+				889549BC21F4A58F78EEB684 /* [CP] Check Pods Manifest.lock */,
+				3EE14E092000342A008C279F /* Sources */,
+				3EE14E0A2000342A008C279F /* Frameworks */,
+				3EE14E0B2000342A008C279F /* Resources */,
+				83D05C196666E6C0F38586E3 /* [CP] Embed Pods Frameworks */,
+				13ED3691E161AA4FDB2583A8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SweetMessage;
+			productName = SweetMessage;
+			productReference = 3EE14E0D2000342A008C279F /* SweetMessage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EE14E052000342A008C279F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Fabio Quintanilha";
+				TargetAttributes = {
+					3EE14E0C2000342A008C279F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3EE14E082000342A008C279F /* Build configuration list for PBXProject "SweetMessage" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3EE14E042000342A008C279F;
+			productRefGroup = 3EE14E0E2000342A008C279F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EE14E0C2000342A008C279F /* SweetMessage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EE14E0B2000342A008C279F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EE14E1B2000342A008C279F /* LaunchScreen.storyboard in Resources */,
+				3EE14E2920004566008C279F /* GoogleService-Info.plist in Resources */,
+				3EE14E182000342A008C279F /* Assets.xcassets in Resources */,
+				3EE14E162000342A008C279F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13ED3691E161AA4FDB2583A8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetMessage/Pods-SweetMessage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83D05C196666E6C0F38586E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SweetMessage/Pods-SweetMessage-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SweetMessage/Pods-SweetMessage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		889549BC21F4A58F78EEB684 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SweetMessage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EE14E092000342A008C279F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED46A82200187320056CCE6 /* FirestoreService.swift in Sources */,
+				3EE14E2720003677008C279F /* NewMessageTableViewController.swift in Sources */,
+				3EE14E112000342A008C279F /* AppDelegate.swift in Sources */,
+				3ED46ABA2003389E0056CCE6 /* TextViewPlaceholder.swift in Sources */,
+				3EE14E2B200054B3008C279F /* Message.swift in Sources */,
+				3EE14E2320003534008C279F /* MessagesTableViewController.swift in Sources */,
+				3ED46A882001A6580056CCE6 /* DataCollectionReference.swift in Sources */,
+				3EE14E2520003560008C279F /* MessageCell.swift in Sources */,
+				3ED46A8E20020A860056CCE6 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3EE14E142000342A008C279F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EE14E152000342A008C279F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3EE14E192000342A008C279F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EE14E1A2000342A008C279F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3EE14E1D2000342A008C279F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3EE14E1E2000342A008C279F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EE14E202000342A008C279F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E76C781258D7F3691F68212C /* Pods-SweetMessage.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8M84SE4ND;
+				INFOPLIST_FILE = SweetMessage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bwtdirectgroup.SweetMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3EE14E212000342A008C279F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D9960CE5301B3D85BDC2409 /* Pods-SweetMessage.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8M84SE4ND;
+				INFOPLIST_FILE = SweetMessage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bwtdirectgroup.SweetMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EE14E082000342A008C279F /* Build configuration list for PBXProject "SweetMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EE14E1D2000342A008C279F /* Debug */,
+				3EE14E1E2000342A008C279F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EE14E1F2000342A008C279F /* Build configuration list for PBXNativeTarget "SweetMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EE14E202000342A008C279F /* Debug */,
+				3EE14E212000342A008C279F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3EE14E052000342A008C279F /* Project object */;
+}
